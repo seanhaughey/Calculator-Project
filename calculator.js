@@ -7,7 +7,6 @@ $(function() {
 	var previousCalc = 0; 
 	num1 = parseFloat($("#inputNum1").val());
 	num2 = parseFloat($("#inputNum2").val());
-	
 	function clearBox(){
 		$("#inputNum1").val('');
 		$("#inputNum2").val('');
@@ -71,5 +70,14 @@ $(function() {
 			$("#stringOutput").append("<li>"+( num1 + " / " + num2 + " = " + div(num1,num2))+"</li>");
 		}
 		clearBox();
+	});
+	$("#exponent").on("click",function(){
+		num1 = parseFloat($("#inputNum1").val());
+		num2 = parseFloat($("#inputNum2").val());
+		if(isNotANumber(num1,num2)){
+			$("#result").html(Math.pow(num1,num2));
+			$("#stringOutput").append("<li>"+( num1 + "raised to "+ num2 + "=" + Math.pow(num1,num2))+"</li>");
+		}
+
 	});
 });
