@@ -36,9 +36,7 @@ $(function() {
 			return true;
 		}
 	};
-
 	$("#add").on("click",function(){
-		//input 1 + input 2
 		num1 = parseFloat($("#inputNum1").val());
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
@@ -48,7 +46,6 @@ $(function() {
 		clearBox();
 	});	
 	$("#subtract").on("click",function(){
-		//input 1 + input 2
 		num1 = parseFloat($("#inputNum1").val());
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
@@ -58,7 +55,6 @@ $(function() {
 		clearBox();
 	});
 	$("#multiply").on("click",function(){
-		//input 1 + input 2
 		num1 = parseFloat($("#inputNum1").val());
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
@@ -68,7 +64,6 @@ $(function() {
 		clearBox();
 	});
 	$("#divide").on("click",function(){
-		//input 1 + input 2
 	 	num1 = parseFloat($("#inputNum1").val());
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
@@ -77,6 +72,4 @@ $(function() {
 		}
 		clearBox();
 	});
-
-
 });
