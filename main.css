@@ -20,3 +20,17 @@ button {
 	border-radius: 20px;
 	font-size: 65px;
 }
+
+
+#result {
+	height: 80px;
+	font-size: 80px;
+	color: red;
+	max-width: 100%;
+	border: 1px solid white;
+}
+
+li {
+	text-align: left;
+	color: white;
+}
