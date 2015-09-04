@@ -1,8 +1,6 @@
 * {
-<<<<<<< HEAD
 	box-sizing: border-box;
-	background-color: black;
-	color: yellow;
+	color: blue;
 }
 
 input {
@@ -21,7 +19,6 @@ button {
 	height: 100px;
 	border-radius: 20px;
 	font-size: 65px;
-<<<<<<< HEAD
 }
 
 
@@ -30,13 +27,16 @@ button {
 	font-size: 80px;
 	color: red;
 	max-width: 100%;
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 }
 
 li {
 	text-align: left;
-	color: white;
-=======
->>>>>>> 33beb86273e561cf583dfc40810ed96e452f3467
->>>>>>> 95857898a84a1ec09e2e703ffd3160d299df5363
+}
+
+#stringOutput {
+	height: 100px;
+	width: 200px;
+	overflow: auto;
+	margin: 20px auto;
 }
