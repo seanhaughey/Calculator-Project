@@ -11,9 +11,15 @@ $(function() {
 		var num1 = parseFloat($("#inputNum1").val());
 		var num2 = parseFloat($("#inputNum2").val());
 		var sum = num1 + num2;
-		$("#result").html(sum);
-		previousCalc = ( num1 + " + " + num2 + " = " + sum);
-		$("#stringOutput").append("<li>"+previousCalc+"</li>");
+		if(isNaN(num1) || isNaN(num2)){
+			alert("Enter a valid number dummy");
+		}else if(num1 === null || num2 === null){
+			alert("Enter a valid number dummy");
+		}else{
+			$("#result").html(sum);
+			previousCalc = ( num1 + " + " + num2 + " = " + sum);
+			$("#stringOutput").append("<li>"+previousCalc+"</li>");
+		}
 	});	
 
 	$("#subtract").on("click",function(){
@@ -21,19 +27,31 @@ $(function() {
 		var num1 = parseFloat($("#inputNum1").val());
 		var num2 = parseFloat($("#inputNum2").val());
 		var subtraction = num1 - num2;
-		$("#result").html(subtraction);
-		previousCalc = ( num1 + " - " + num2 + " = " + subtraction);
-		$("#stringOutput").append("<li>"+previousCalc+"</li>");
+		if(isNaN(num1) || isNaN(num2)){
+			alert("Enter a valid number dummy");
+		}else if(num1 === null || num2 === null){
+			alert("Enter a valid number dummy");
+		}else{
+			$("#result").html(subtraction);
+			previousCalc = ( num1 + " - " + num2 + " = " + subtraction);
+			$("#stringOutput").append("<li>"+previousCalc+"</li>");
+		}
 	})
 
 	$("#multiply").on("click",function(){
 		//input 1 + input 2
 		var num1 = parseFloat($("#inputNum1").val());
 		var num2 = parseFloat($("#inputNum2").val());
-		var multiply = num1 * num2;
-		$("#result").html(multiply);
-		previousCalc = ( num1 + " x " + num2 + " = " + multiply);
-		$("#stringOutput").append("<li>"+previousCalc+"</li>");
+		var multiplication = num1 * num2;
+		if(isNaN(num1) || isNaN(num2)){
+			alert("Enter a valid number dummy");
+		}else if(num1 === null || num2 === null){
+			alert("Enter a valid number dummy");
+		}else{
+			$("#result").html(multiplication);
+			previousCalc = ( num1 + " x " + num2 + " = " + multiplication);
+			$("#stringOutput").append("<li>"+previousCalc+"</li>");
+		}
 	})
 
 	$("#divide").on("click",function(){
@@ -41,9 +59,15 @@ $(function() {
 		var num1 = parseFloat($("#inputNum1").val());
 		var num2 = parseFloat($("#inputNum2").val());
 		var division = num1/num2;
-		$("#result").html(multiply);
-		previousCalc = ( num1 + " / " + num2 + " = " + division);
-		$("#stringOutput").append("<li>"+previousCalc+"</li>");
+		if(isNaN(num1) || isNaN(num2)){
+			alert("Enter a valid number dummy");
+		}else if(num1 === null || num2 === null){
+			alert("Enter a valid number dummy");
+		}else{
+			$("#result").html(division);
+			previousCalc = ( num1 + " / " + num2 + " = " + division);
+			$("#stringOutput").append("<li>"+previousCalc+"</li>");
+		}
 	})
 
 
