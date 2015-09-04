@@ -76,8 +76,8 @@ $(function() {
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
 			$("#result").html(Math.pow(num1,num2));
-			$("#stringOutput").append("<li>"+( num1 + "raised to "+ num2 + "=" + Math.pow(num1,num2))+"</li>");
+			$("#stringOutput").append("<li>"+( num1 +" <sup>"+num2+"</sup>"+ " = " + Math.pow(num1,num2))+"</li>");
 		}
-
+		clearBox();
 	});
 });
