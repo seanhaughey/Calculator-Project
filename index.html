@@ -1,15 +1,39 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<title>CALCULATING MACHINE</title>
 </head>
-<body>
-	<div>
-		<input id="inputNum1" placeholder="NUMBERS GO HERE"></input>
-		<input id="inputNum2" placeholder="NUMBERS GO HERE"></input>
+<body>	
+	<div style="text-align: center;">
+		<div class="page-header">
+			<h1>CALCULATING MACHINE</h1>
+		</div>
+		<div class="row">
+			<input id="inputNum1" class="col-md-6" placeholder="ENTER NUMBER HERE"></input>
+			<input id="inputNum2" class="col-md-6" placeholder="ENTER NUMBER HERE"></input>
+		</div>
+		<div>
+			<button id="add" type="button">+</button>
+			<button id="subtract" type="button">-</button>
+			<button id="multiply" type="button">x</button>
+			<button id="divide" type="button">/</button>
+			<button id="squareRoot" type="button">&#8730</button>
+			<button id="exponent" type="button">x<sup>y</sup></button>
+		</div>
+	<!-- 	<div>
+			<button id="equals" type="button">=</button>
+		</div>
+	 -->	
+	 	<div id="result"></div>
+	 	<div id="storedCalculations"></div>
+	 		<ul id="stringOutput"></ul>
+		<script src="calculator.js"></script>
 	</div>
+<<<<<<< HEAD
 	<div>
 		<button id="add" type="button">+</button>
 		<button id="subtract" type="button">-</button>
@@ -25,5 +49,7 @@
  	<div id="storedCalculations"></div>
  		<ul id="stringOutput"></ul>
 	<script src="calculator.js"></script>
+=======
+>>>>>>> 0b1d7ca4b88ae5b21deb2adfe60dd86bcfaf3914
 </body>
 </html>
