@@ -13,10 +13,10 @@ $(function() {
 		var num1 = parseInt($("#inputNum1").val());
 		var num2 = parseInt($("#inputNum2").val());
 		var sum = num1 + num2;
-		console.log(num1+num2);
+		console.log(sum);
 	});	
 
-	$("#add").on("click",function(){
+	$("#subtract").on("click",function(){
 		//input 1 + input 2
 		var num1 = parseInt($("#inputNum1").val());
 		var num2 = parseInt($("#inputNum2").val());
@@ -24,7 +24,7 @@ $(function() {
 		console.log(subtraction);
 	})
 
-	$("#add").on("click",function(){
+	$("#multiply").on("click",function(){
 		//input 1 + input 2
 		var num1 = parseInt($("#inputNum1").val());
 		var num2 = parseInt($("#inputNum2").val());
@@ -32,7 +32,7 @@ $(function() {
 		console.log(multiply);
 	})
 
-	$("#add").on("click",function(){
+	$("#divide").on("click",function(){
 		//input 1 + input 2
 		var num1 = parseInt($("#inputNum1").val());
 		var num2 = parseInt($("#inputNum2").val());
