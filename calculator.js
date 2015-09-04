@@ -7,7 +7,6 @@ $(function() {
 	var previousCalc = 0; 
 	num1 = parseFloat($("#inputNum1").val());
 	num2 = parseFloat($("#inputNum2").val());
-	
 	function clearBox(){
 		$("#inputNum1").val('');
 		$("#inputNum2").val('');
@@ -36,9 +35,7 @@ $(function() {
 			return true;
 		}
 	};
-
 	$("#add").on("click",function(){
-		//input 1 + input 2
 		num1 = parseFloat($("#inputNum1").val());
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
@@ -48,7 +45,6 @@ $(function() {
 		clearBox();
 	});	
 	$("#subtract").on("click",function(){
-		//input 1 + input 2
 		num1 = parseFloat($("#inputNum1").val());
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
@@ -58,7 +54,6 @@ $(function() {
 		clearBox();
 	});
 	$("#multiply").on("click",function(){
-		//input 1 + input 2
 		num1 = parseFloat($("#inputNum1").val());
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
@@ -68,7 +63,6 @@ $(function() {
 		clearBox();
 	});
 	$("#divide").on("click",function(){
-		//input 1 + input 2
 	 	num1 = parseFloat($("#inputNum1").val());
 		num2 = parseFloat($("#inputNum2").val());
 		if(isNotANumber(num1,num2)){
@@ -77,6 +71,13 @@ $(function() {
 		}
 		clearBox();
 	});
+	$("#exponent").on("click",function(){
+		num1 = parseFloat($("#inputNum1").val());
+		num2 = parseFloat($("#inputNum2").val());
+		if(isNotANumber(num1,num2)){
+			$("#result").html(Math.pow(num1,num2));
+			$("#stringOutput").append("<li>"+( num1 + "raised to "+ num2 + "=" + Math.pow(num1,num2))+"</li>");
+		}
 
-
+	});
 });
